@@ -1,14 +1,13 @@
 import React from 'react'
 import Layout from '../components/layout/Layout';
 
-const Home = () => {
+const NuevoProducto = () => {
 
   return (
     <Layout>
-      <h1>Hola</h1>
+      <h1>NuevoProducto</h1>
     </Layout>
-
    );
 }
  
-export default Home;
+export default NuevoProducto;

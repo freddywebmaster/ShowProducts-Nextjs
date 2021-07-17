@@ -1,14 +1,13 @@
 import React from 'react'
 import Layout from '../components/layout/Layout';
 
-const Home = () => {
+const Populares = () => {
 
   return (
     <Layout>
-      <h1>Hola</h1>
+      <h1>POPULARES</h1>
     </Layout>
-
    );
 }
  
-export default Home;
+export default Populares;
