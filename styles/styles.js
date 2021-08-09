@@ -79,6 +79,13 @@ export const Formulario = styled.form`
     max-width: 600px;
     width: 95%;
     margin: 5rem auto 0 auto;
+
+    fieldset{
+        margin: 2rem 0;
+        border: 1px solid #1e1e1e;
+        font-size: 2rem;
+        padding: 2rem;
+    }
 `;
 
 export const Campo = styled.div`
@@ -91,7 +98,7 @@ export const Campo = styled.div`
         font-size: 1.8rem;
     }
 
-    input{
+    input, textarea{
         flex: 1;
         padding: 1rem;
     }
@@ -112,4 +119,16 @@ export const SubmitForm = styled.input`
     &:hover{
         cursor: pointer;
     }
+`;
+
+export const Error = styled.p`
+    background-color: red;
+    font-family: 'PT Sans', sans-serif;
+    padding: 1rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    font-size: 1.4rem;
 `;
