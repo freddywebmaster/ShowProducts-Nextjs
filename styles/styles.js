@@ -82,7 +82,7 @@ export const Formulario = styled.form`
 
     fieldset{
         margin: 2rem 0;
-        border: 1px solid #1e1e1e;
+        border: 1px solid #e1e1e1;
         font-size: 2rem;
         padding: 2rem;
     }
@@ -131,4 +131,67 @@ export const Error = styled.p`
     text-transform: uppercase;
     margin: 2rem 0;
     font-size: 1.4rem;
+`;
+
+export const Imagen = styled.img`
+    max-width: 100%;
+`;
+
+export const ProductoImg = styled.img`
+    width: 200px;
+`;
+
+export const Producto = styled.li`
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+`;
+
+export const DescripcionProducto = styled.div`
+    flex: 0 1 600px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+`;
+
+export const Comentarios = styled.div`
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    div{
+        display: flex;
+        align-items: center;
+        border: 1px solid #e1e1e1;
+        padding: .3rem 1rem;
+        margin-right: 2rem;
+    }
+    img{
+        width: 2rem;
+        margin-right: 2rem;
+    }
+    p{
+        font-size: 1.6rem;
+        margin-right: 1rem;
+        font-weight: 700;
+        &:last-of-type{
+            margin: 0;
+        }
+    }
+`;
+
+export const Votos = styled.div`
+    flex: 0 0 auto;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    padding: 1rem 3rem;
+    div {
+        font-size: 2rem;
+    }
+    p{
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 700;
+    }
 `;

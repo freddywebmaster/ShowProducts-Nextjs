@@ -31,7 +31,7 @@ const Login = () => {
       alert('iniciaste sesion perro');
       Router.push('/');
     } catch (error) {
-      console.log('Error al crear usuario', error);
+      console.log('Error al iniciando sesion', error);
       setError(error.message);
     }
   }

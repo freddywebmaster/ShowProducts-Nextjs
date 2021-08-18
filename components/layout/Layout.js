@@ -11,7 +11,7 @@ const Layout = (props) => {
                     :root{
                         --gris: #3d3d3d;
                         --grid2: #6f6f6f;
-                        --gris3:  #1e1e1e;
+                        --gris3:  #e1e1e1;
                         --naranja: #DA5522;
                     }
                     html{
@@ -44,6 +44,10 @@ const Layout = (props) => {
                     }
                     a{
                         text-decoration: none;
+                    }
+                    img{
+                        max-width: 100%;
+                        min-width: 100%;
                     }
                 `}
             />
