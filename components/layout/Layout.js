@@ -49,6 +49,9 @@ const Layout = (props) => {
                         max-width: 100%;
                         min-width: 100%;
                     }
+                    .mt-5{
+                        margin-top: 5rem;
+                    }
                 `}
             />
             <SEO/>

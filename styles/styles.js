@@ -20,10 +20,12 @@ export const Logo = styled.p`
 `;
 
 export const Boton = styled.a`
+    display: block;
     font-weight: 700;
     text-transform: uppercase;
     border: 1px solid #d1d1d1;
-    margin-right: 1rem;
+    margin: 2rem auto;
+    text-align: center;
     padding: .8rem 2rem;
     background-color: ${props => props.bgColor ? '#DA552F' : 'white'};
     color: ${props => props.bgColor ? 'white' : '#000'};

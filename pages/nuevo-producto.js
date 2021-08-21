@@ -8,7 +8,7 @@ import FileUploader from 'react-firebase-file-uploader';
 //hook para validar form
 import useValidacion from '../hooks/useValidacion';
 import validarCrearProducto from '../validaciones/validarCrearProducto';
-
+import Error404 from '../components/layout/404';
 const NuevoProducto = () => {
 
   // state de las imagenes
@@ -53,7 +53,12 @@ const NuevoProducto = () => {
       descripcion,
       votos: 0,
       comentarios: [],
-      creado: Date.now()
+      creado: Date.now(),
+      creador: {
+        id: usuario.uid,
+        nombre: usuario.displayName
+      },
+      haVotado: []
     }
 
     //guardar prod
@@ -94,11 +99,11 @@ const NuevoProducto = () => {
           guardarUrlImagen(url);
         });
   };
-  
 
   return (
     <Layout>
-      <h1
+      { !usuario ? <Error404 mensaje="Inicia sesion primero crack ;)" />:
+      (<><h1
         css={css`
           text-align: center;
           margin-top: 5rem;
@@ -185,7 +190,7 @@ const NuevoProducto = () => {
           type="submit" 
           value="Crear Producto"
         />
-      </Formulario>
+      </Formulario></>)}
     </Layout>
    );
 }
